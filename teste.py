@@ -2,7 +2,7 @@ import openai
 from translate import Translator
 import os
 
-openai.api_key = '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'
+openai.api_key = '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'
 
 
 def get_api_response(prompt: str) -> str | None:
@@ -60,6 +60,11 @@ def main():
                               '\nAI: Hello Sir, it is now 12:00']
 
     while True:
+
+
+        
+        
+
         user_input: str = input('You: ')
         response: str = get_bot_response(user_input, prompt_list)
         if 'Crie uma lista' in user_input:
